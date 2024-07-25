@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <strong>Mail generate randomicamente</strong>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled" v-if="randomMail.length == 10">
             <li v-for="(mail, index) in randomMail">
                 {{ mail }}
             </li>
